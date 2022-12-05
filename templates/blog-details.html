@@ -24,9 +24,6 @@
   </section>
   <!--================ Hero sm Banner end =================-->
 
-
-
-
   <!--================ Start Blog Post Area =================-->
   <section class="blog-post-area section-margin">
     <div class="container">
@@ -35,9 +32,9 @@
             <div class="main_blog_details">
 
               {% if post.image_url %}
-                    <img class="img-fluid" src={{ post.image_url }} alt="">
+                    <img class="img-fluid" src={{ post.image_url }} alt="post image">
                   {% else %}
-                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="post image">
                   {% endif %}
 
                 <h4>{{ post.title }}</h4>
@@ -63,7 +60,6 @@
              </div>
                </div>
               </div>
-
 
                 <div class="comments-area">
                     <h4>{{ post.comments|length }} Comments</h4>
@@ -91,7 +87,6 @@
 
                 </div>
         </div>
-
 
           <!-- Start Blog Post Siddebar -->
           <div class="col-lg-4 sidebar-widgets">
